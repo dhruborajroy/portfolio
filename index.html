@@ -1,930 +1,1263 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Dhruboraj Roy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Civil Engineering Graduate | Researcher | ICCR Scholar | Full-Stack Developer" />
-    <meta name="keywords" content="Dhruboraj Roy, Civil Engineering, BEC, Bangladesh, ICCR, Research, ArcGIS, PHP, Developer" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/scss/style.css" />
-    <link rel="stylesheet" href="css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/scss/responsive.css" />
-  </head>
-  <body>
-
-    <img src="images/element_parallax1.png" class="vx" alt="" data-enllax-ratio="0.3" data-enllax-type="foreground" />
-    <img src="images/element_parallax2.png" class="vx2" alt="" data-enllax-ratio="-1" data-enllax-type="foreground" />
-    <img src="images/element_animation.png" class="vx" alt="" data-enllax-ratio="0.8" data-enllax-type="foreground" />
-
-    <div class="page-loading">
-      <img src="images/loader.gif" alt="" />
-      <span>Skip Loader</span>
-    </div>
-
-    <!-- ===================== HERO ===================== -->
-    <section id="start">
-      <div class="block start_bg double_gap_top double_gap_bottom">
-        <div class="container fluid">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="start_sec">
-                <div class="row justify-content-center align-items-center">
-                  <div class="col-xl-5 text-center order-last">
-                    <div class="user_img">
-                      <div class="element"><img src="images/element_square.png" alt="" /></div>
-                      <div class="element_circle_yellow"><img src="images/element_yellow_circle.png" alt="" /></div>
-                      <div class="element_circle_pink"><img src="images/element_pink_circle.png" alt="" /></div>
-                      <div class="element_circle_small_pink"><img src="images/element_pink_circle_small.png" alt="" /></div>
-                      <div class="element_square"><img src="images/element_square_yes.png" alt="" /></div>
-                      <div class="element_circle_purple"><img src="images/element_purple_circle.png" alt="" /></div>
-                      <div class="element_line"><img src="images/line.png" alt="" /></div>
-                      <div class="element_circle_gray"><img src="images/element_gray_circle.png" alt="" /></div>
-                      <img src="images/resource/Dhrubo.jpg" alt="Dhruboraj Roy" />
-                    </div>
-                  </div>
-                  <div class="col-xl-4 order-first">
-                    <div class="start_intro">
-                      <span class="RedTextColor">Hi, I'm</span>
-                      <div class="glitch" data-text="Dhrubo Raj Roy">Dhrubo Raj Roy</div>
-                      <h4><i class="fa fa-connectdevelop"></i> Civil Engineering Graduate &amp; Researcher at Barishal Engineering College.</h4>
-                      <p>ICCR Scholar · Research Assistant · Full-Stack Developer · YouTube Educator from Bangladesh</p>
-                      <div class="start_btn">
-                        <a href="https://bec.edu.bd/developer/DhruboRajRoy-CV.pdf" title="" class="theme_btn RedBgShadow mr-4" target="_blank"><i class="fa fa-long-arrow-down"></i> Download Resume</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+   <head>
+      <meta charset="utf-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, viewport-fit=cover"
+      />
+      <title>
+         Dhruboraj Roy · Civil Engineer, Water Resources & Geospatial
+      </title>
+      <meta
+         name="description"
+         content="Portfolio of Dhruboraj Roy: civil engineering graduate, hydraulic modelling and geospatial researcher, YouTube tutor and ICCR scholar."
+      />
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      />
+      <style>
+         :root {
+            --bg: #f5f7f6;
+            --card: #fff;
+            --tx: #14211f;
+            --mu: #5a6b68;
+            --ac: #0b6e66;
+            --ac2: #e0f0ee;
+            --bd: #d9e2e0;
+            --hero: #0a3d3a;
+            --hero2: #e7f6f3;
+            color-scheme: light;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+         }
+         @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+               --bg: #0d1514;
+               --card: #142120;
+               --tx: #e5eeec;
+               --mu: #97aaa6;
+               --ac: #5fd0c4;
+               --ac2: #17302d;
+               --bd: #243736;
+               --hero: #082a28;
+               --hero2: #e7f6f3;
+               color-scheme: dark;
+            }
+         }
+         :root[data-theme="dark"] {
+            --bg: #0d1514;
+            --card: #142120;
+            --tx: #e5eeec;
+            --mu: #97aaa6;
+            --ac: #5fd0c4;
+            --ac2: #17302d;
+            --bd: #243736;
+            --hero: #082a28;
+            --hero2: #e7f6f3;
+            color-scheme: dark;
+         }
+         * {
+            box-sizing: border-box;
+         }
+         html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(60px + env(safe-area-inset-top, 0px));
+         }
+         body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--tx);
+            font:
+               16px/1.65 Inter,
+               system-ui,
+               -apple-system,
+               "Segoe UI",
+               sans-serif;
+         }
+         h1,
+         h2,
+         h3 {
+            font-family: Fraunces, Georgia, serif;
+            line-height: 1.2;
+            margin: 0;
+         }
+         a {
+            color: var(--ac);
+         }
+         nav {
+            position: sticky;
+            top: env(safe-area-inset-top, 0px);
+            z-index: 10;
+            background: var(--card);
+            border-bottom: 1px solid var(--bd);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 0 16px;
+            height: 52px;
+            overflow-x: auto;
+            white-space: nowrap;
+         }
+         nav b {
+            font-family: Fraunces, Georgia, serif;
+            margin-right: auto;
+            padding-right: 16px;
+         }
+         nav a {
+            text-decoration: none;
+            color: var(--mu);
+            font-size: 14px;
+            padding: 6px 10px;
+            border-radius: 8px;
+         }
+         nav a:hover {
+            background: var(--ac2);
+            color: var(--ac);
+         }
+         body::before {
+            content: "";
+            position: fixed;
+            inset: 0 0 auto;
+            height: env(safe-area-inset-top, 0px);
+            background: var(--card);
+            z-index: 11;
+         }
+         .hero {
+            background: var(--hero);
+            color: var(--hero2);
+            position: relative;
+            overflow: hidden;
+         }
+         .hero .in {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 72px 20px 96px;
+            position: relative;
+            z-index: 1;
+         }
+         .eyebrow {
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            font-size: 12px;
+            opacity: 0.75;
+            margin: 0 0 12px;
+         }
+         .hero h1 {
+            font-size: clamp(38px, 8vw, 68px);
+            font-weight: 700;
+         }
+         .hero p.lead {
+            max-width: 640px;
+            font-size: 18px;
+            opacity: 0.9;
+            margin: 16px 0 26px;
+         }
+         .btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+         }
+         .b {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 99px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border: 1px solid rgba(231, 246, 243, 0.45);
+            color: var(--hero2);
+         }
+         .b.p {
+            background: #5fd0c4;
+            color: #052b28;
+            border-color: #5fd0c4;
+         }
+         .hero svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            opacity: 0.18;
+         }
+         .stats {
+            max-width: 1000px;
+            margin: -40px auto 0;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            position: relative;
+            z-index: 2;
+         }
+         .stat {
+            background: var(--card);
+            border: 1px solid var(--bd);
+            border-radius: 14px;
+            padding: 16px;
+            text-align: center;
+         }
+         .stat b {
+            display: block;
+            font:
+               700 28px Fraunces,
+               Georgia,
+               serif;
+            color: var(--ac);
+         }
+         .stat span {
+            font-size: 13px;
+            color: var(--mu);
+         }
+         main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+         }
+         section {
+            padding: 44px 0 8px;
+         }
+         section > h2 {
+            font-size: 30px;
+            margin-bottom: 6px;
+         }
+         section > h2::after {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 3px;
+            background: var(--ac);
+            margin-top: 8px;
+            border-radius: 2px;
+         }
+         .sub {
+            color: var(--mu);
+            margin: 10px 0 22px;
+         }
+         .card {
+            background: var(--card);
+            border: 1px solid var(--bd);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 14px;
+         }
+         .card h3 {
+            font-size: 19px;
+         }
+         .meta {
+            color: var(--mu);
+            font-size: 14px;
+            margin: 4px 0 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 14px;
+         }
+         .card ul {
+            margin: 8px 0 0;
+            padding-left: 20px;
+         }
+         .card li {
+            margin: 3px 0;
+         }
+         .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+         }
+         .tag {
+            font-size: 12px;
+            background: var(--ac2);
+            color: var(--ac);
+            padding: 2px 10px;
+            border-radius: 99px;
+            font-weight: 600;
+            white-space: nowrap;
+         }
+         .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+         }
+         .tl {
+            border-left: 2px solid var(--bd);
+            margin-left: 6px;
+            padding-left: 20px;
+         }
+         .tl .card {
+            position: relative;
+         }
+         .tl .card::before {
+            content: "";
+            position: absolute;
+            left: -28px;
+            top: 26px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--ac);
+            border: 3px solid var(--bg);
+         }
+         .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+         }
+         .chips span {
+            font-size: 13px;
+            border: 1px solid var(--bd);
+            background: var(--bg);
+            padding: 2px 10px;
+            border-radius: 8px;
+         }
+         .about {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+         }
+         @media (max-width: 760px) {
+            .about {
+               grid-template-columns: 1fr;
+            }
+            .stats {
+               grid-template-columns: repeat(2, 1fr);
+            }
+         }
+         .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 14px;
+         }
+         footer {
+            text-align: center;
+            color: var(--mu);
+            font-size: 14px;
+            padding: 36px 20px 28px;
+         }
+         @media (prefers-reduced-motion: reduce) {
+            html {
+               scroll-behavior: auto;
+            }
+         }
+         .spec {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14.5px;
+         }
+         .spec td {
+            padding: 8px 6px;
+            border-bottom: 1px solid var(--bd);
+            vertical-align: top;
+         }
+         .spec td:first-child {
+            color: var(--mu);
+            width: 38%;
+         }
+         .spec tr:last-child td {
+            border: 0;
+         }
+         .stage {
+            position: relative;
+            aspect-ratio: 16/9;
+            background: var(--ac2);
+            border: 1px solid var(--bd);
+            border-radius: 14px;
+            overflow: hidden;
+            cursor: zoom-in;
+            touch-action: pan-y;
+         }
+         .stage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+         .ph2 {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            color: var(--ac);
+            text-align: center;
+            padding: 16px;
+         }
+         .ph2 b {
+            font:
+               700 44px Fraunces,
+               Georgia,
+               serif;
+            opacity: 0.6;
+         }
+         .ph2 span {
+            font-size: 14px;
+            color: var(--mu);
+         }
+         .nv {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 0;
+            background: rgba(10, 30, 28, 0.6);
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+         }
+         .pv {
+            left: 10px;
+         }
+         .nx {
+            right: 10px;
+         }
+         .cnt {
+            position: absolute;
+            right: 12px;
+            bottom: 10px;
+            background: rgba(10, 30, 28, 0.65);
+            color: #fff;
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 99px;
+         }
+         .gcap {
+            margin: 12px 2px 6px;
+            font-weight: 600;
+         }
+         .gcap small {
+            display: block;
+            color: var(--mu);
+            font-weight: 400;
+         }
+         .thumbs {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-top: 10px;
+         }
+         .thumbs button {
+            border: 2px solid var(--bd);
+            background: var(--card);
+            color: var(--mu);
+            border-radius: 10px;
+            padding: 0;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            font-size: 12px;
+         }
+         .thumbs button.on {
+            border-color: var(--ac);
+            color: var(--ac);
+         }
+         .thumbs img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+         .dots {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 10px;
+         }
+         .dots i {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--bd);
+         }
+         .dots i.on {
+            background: var(--ac);
+         }
+         #lb {
+            position: fixed;
+            inset: 0;
+            background: rgba(5, 15, 14, 0.94);
+            z-index: 50;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: zoom-out;
+         }
+         #lb.on {
+            display: flex;
+         }
+         #lb img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+         }
+         #lb .ph2 {
+            color: #fff;
+         }
+         html {
+            -webkit-text-size-adjust: 100%;
+         }
+         body {
+            overflow-x: hidden;
+         }
+         .card {
+            overflow-wrap: anywhere;
+         }
+         @media (max-width: 760px) {
+            .grid {
+               grid-template-columns: 1fr;
+            }
+            .stage {
+               aspect-ratio: 4/3;
+            }
+         }
+         @media (max-width: 600px) {
+            body {
+               font-size: 15.5px;
+            }
+            nav {
+               padding: 0 8px;
+               scrollbar-width: none;
+            }
+            nav::-webkit-scrollbar {
+               display: none;
+            }
+            nav a {
+               padding: 10px 12px;
+            }
+            .hero .in {
+               padding: 44px 16px 72px;
+            }
+            .hero p.lead {
+               font-size: 16px;
+               margin: 14px 0 22px;
+            }
+            .btns .b {
+               flex: 1 1 auto;
+               text-align: center;
+               padding: 12px 16px;
+            }
+            .stats {
+               margin-top: -30px;
+               padding: 0 14px;
+               gap: 10px;
+            }
+            .stat {
+               padding: 12px 8px;
+            }
+            .stat b {
+               font-size: 24px;
+            }
+            .stat span {
+               font-size: 12px;
+            }
+            main {
+               padding: 14px;
+            }
+            section {
+               padding: 30px 0 4px;
+            }
+            section > h2 {
+               font-size: 25px;
+            }
+            .sub {
+               margin: 8px 0 16px;
+            }
+            .card {
+               padding: 16px;
+               border-radius: 12px;
+            }
+            .card h3 {
+               font-size: 17px;
+            }
+            .card ul {
+               padding-left: 18px;
+            }
+            .meta {
+               font-size: 13px;
+               gap: 2px 10px;
+            }
+            .tag {
+               white-space: normal;
+            }
+            .tl {
+               margin-left: 4px;
+               padding-left: 16px;
+            }
+            .tl .card::before {
+               left: -24px;
+               top: 22px;
+            }
+            .spec tr {
+               display: block;
+               padding: 8px 0;
+               border-bottom: 1px solid var(--bd);
+            }
+            .spec tr:last-child {
+               border: 0;
+            }
+            .spec td {
+               display: block;
+               border: 0;
+               padding: 1px 0;
+               width: auto !important;
+            }
+            .spec td:first-child {
+               font-size: 12px;
+               text-transform: uppercase;
+               letter-spacing: 0.04em;
+            }
+            .nv {
+               width: 36px;
+               height: 36px;
+               font-size: 20px;
+            }
+            .pv {
+               left: 6px;
+            }
+            .nx {
+               right: 6px;
+            }
+            .ph2 b {
+               font-size: 32px;
+            }
+            .ph2 span {
+               font-size: 13px;
+            }
+            .thumbs {
+               display: flex;
+               overflow-x: auto;
+               gap: 8px;
+               scroll-snap-type: x mandatory;
+               padding-bottom: 4px;
+               scrollbar-width: none;
+            }
+            .thumbs::-webkit-scrollbar {
+               display: none;
+            }
+            .thumbs button {
+               flex: 0 0 88px;
+               scroll-snap-align: start;
+            }
+            .contact .b {
+               flex: 1 1 100%;
+               text-align: center;
+               padding: 12px 16px;
+            }
+            footer {
+               padding: 28px 16px 24px;
+            }
+         }
+         nav {
+            overflow: visible;
+            white-space: normal;
+         }
+         #menu {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+         }
+         #mb,
+         #cur {
+            display: none;
+         }
+         nav a.on {
+            background: var(--ac2);
+            color: var(--ac);
+            font-weight: 600;
+         }
+         @media (max-width: 860px) {
+            nav {
+               justify-content: space-between;
+               gap: 8px;
+               padding: 0 6px 0 14px;
+            }
+            nav b {
+               margin-right: 0;
+               padding-right: 0;
+               white-space: nowrap;
+            }
+            #cur {
+               display: block;
+               margin: 0 auto 0 4px;
+               min-width: 0;
+               font-size: 13px;
+               font-weight: 600;
+               color: var(--ac);
+               background: var(--ac2);
+               padding: 2px 10px;
+               border-radius: 99px;
+               overflow: hidden;
+               text-overflow: ellipsis;
+               white-space: nowrap;
+            }
+            #mb {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               gap: 5px;
+               width: 44px;
+               height: 44px;
+               padding: 0 11px;
+               border: 0;
+               background: none;
+               border-radius: 10px;
+               cursor: pointer;
+               flex: none;
+            }
+            #mb i {
+               display: block;
+               height: 2px;
+               background: var(--tx);
+               border-radius: 2px;
+               transition:
+                  transform 0.25s,
+                  opacity 0.2s;
+            }
+            nav.open #mb i:nth-child(1) {
+               transform: translateY(7px) rotate(45deg);
+            }
+            nav.open #mb i:nth-child(2) {
+               opacity: 0;
+            }
+            nav.open #mb i:nth-child(3) {
+               transform: translateY(-7px) rotate(-45deg);
+            }
+            #menu {
+               position: absolute;
+               left: 0;
+               right: 0;
+               top: 100%;
+               flex-direction: column;
+               align-items: stretch;
+               gap: 2px;
+               background: var(--card);
+               border-bottom: 1px solid var(--bd);
+               box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+               max-height: 0;
+               overflow: hidden;
+               visibility: hidden;
+               padding: 0 12px;
+               transition:
+                  max-height 0.3s ease,
+                  padding 0.3s ease,
+                  visibility 0s 0.3s;
+            }
+            nav.open #menu {
+               max-height: calc(100vh - 70px);
+               overflow-y: auto;
+               visibility: visible;
+               padding: 8px 12px 14px;
+               transition:
+                  max-height 0.3s ease,
+                  padding 0.3s ease,
+                  visibility 0s;
+            }
+            #menu a {
+               padding: 13px 14px;
+               font-size: 16px;
+               border-radius: 10px;
+            }
+         }
+         @media (prefers-reduced-motion: reduce) {
+            #menu,
+            #mb i {
+               transition: none !important;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <nav id="nav">
+         <b>Dhruboraj Roy</b><span id="cur">Home</span
+         ><button
+            id="mb"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="menu"
+         >
+            <i></i><i></i><i></i>
+         </button>
+         <div id="menu">
+            <a href="#about">About</a><a href="#education">Education</a
+            ><a href="#experience">Experience</a><a href="#research">Research</a
+            ><a href="#skills">Skills</a><a href="#projects">Projects</a
+            ><a href="#instruments">Instruments</a><a href="#awards">Awards</a
+            ><a href="#contact">Contact</a>
+         </div>
+      </nav>
+      <header class="hero">
+         <div class="in">
+            <p class="eyebrow">
+               Civil Engineering · Water Resources · Geospatial
+            </p>
+            <h1>Dhruboraj Roy</h1>
+            <p class="lead">
+               Civil engineering graduate who models rivers, maps landscapes
+               with GIS and drones, and teaches structural and water engineering
+               to thousands of learners on YouTube.
+            </p>
+            <div class="btns">
+               <a class="b p" href="#contact">Get in touch</a
+               ><a class="b" href="#research">See my research</a
+               ><a
+                  class="b"
+                  href="https://www.youtube.com/@dhruborajroy"
+                  target="_blank"
+                  rel="noopener"
+                  >YouTube channel</a
+               >
             </div>
-          </div>
-        </div>
+         </div>
+         <svg
+            viewBox="0 0 1200 70"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+         >
+            <path
+               d="M0 40 C150 0 300 70 450 35 S750 0 900 38 S1100 60 1200 30 V70 H0Z"
+               fill="#e7f6f3"
+            />
+         </svg>
+      </header>
+      <div class="stats">
+         <div class="stat"><b>3.58</b><span>Final CGPA / 4.00</span></div>
+         <div class="stat"><b>6</b><span>Engineering internships</span></div>
+         <div class="stat"><b>3</b><span>Research outputs</span></div>
+         <div class="stat">
+            <b>2023</b><span>Teaching on YouTube since</span>
+         </div>
       </div>
-    </section>
+      <main id="app"></main>
+      <footer>
+         © <span id="yr"></span> Dhruboraj Roy · Barishal, Bangladesh
+      </footer>
+      <script>
+         const E = (s) =>
+            String(s).replace(
+               /[&<>"]/g,
+               (c) =>
+                  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[
+                     c
+                  ],
+            );
+         const li = (a) =>
+            `<ul>${a.map((x) => `<li>${E(x)}</li>`).join("")}</ul>`;
+         const lk = (u, t) =>
+            u ? `<a href="${u}" target="_blank" rel="noopener">${t}</a>` : "";
+         const D = "https://drive.google.com/file/d/";
+         const EDU = [
+            [
+               "B.Sc. (Engg.) in Civil Engineering",
+               "Barishal Engineering College, University of Dhaka",
+               "2026",
+               [
+                  "Final CGPA 3.58/4.00, First Class Second in the department",
+                  "Coursework: Design of Concrete Structures, Structural Analysis & Design, Hydrology & Water Resources, Environmental, Geotechnical and Transportation Engineering, Fluid Mechanics, GIS & Remote Sensing, Surveying",
+               ],
+               D + "1I4NVgm5X6FQ3VsjcDSxO_H0I0kfZTKEl/view?usp=sharing",
+            ],
+            [
+               "HSC, Science",
+               "Police Lines School & College, Rangpur",
+               "2020",
+               ["GPA 5.00/5.00, Dinajpur Board"],
+               D + "1H--PI5uiQ9onD2hpxyuUdzUF8hijKajb/view?usp=sharing",
+            ],
+            [
+               "SSC, Science",
+               "Lalmonirhat Government High School",
+               "2018",
+               ["GPA 5.00/5.00, Dinajpur Board"],
+               D + "155k8wBWQu8EENS4ZgXXd4BhunecpHHf_/view?usp=sharing",
+            ],
+         ];
+         const EXP = [
+            [
+               "Research Intern, Hydraulic Modelling & River Engineering",
+               "River Research Institute (RRI), Faridpur",
+               "Oct – Dec 2026",
+               [
+                  "River morphology modelling with MIKE 21C and HR Merlin (2D & 3D Wavemaker)",
+                  "3D riverbed scanning with TOPCON CR-P1-S; UAV surveys with DJI Mavic 3 Pro and photogrammetry in Agisoft Metashape",
+                  "Geotechnical, cement and concrete, sediment and water quality laboratory testing",
+                  "Training on Numerical Modelling for Coastal Hydromorphology",
+               ],
+               D + "1xPFPVAIY4_o0J2HbTFaGW0FAYNhOMU2R/view",
+            ],
+            [
+               "Engineering Intern, Water Resources & Coastal Infrastructure",
+               "Bangladesh Water Development Board (BWDB), Barishal",
+               "Jul – Aug 2026",
+               [
+                  "Embankments, polders, flood shelters, regulators, pumping stations and barrages",
+                  "Hydrological data collection and embankment performance monitoring in a climate-stressed coastal zone",
+               ],
+               D + "1PN312Ia_vR92Uf0dUX6w8upzlXzKeyb2/view?usp=sharing",
+            ],
+            [
+               "Engineering Intern, River & Waterway Infrastructure",
+               "Bangladesh Inland Water Transport Authority (BIWTA)",
+               "Jun – Jul 2026",
+               [
+                  "Structural condition assessment of river port assets",
+                  "Hydrographic surveying, sediment management and river training works",
+               ],
+               D + "1GfMDnMuQqSC9elCov3LpitmcbaKdVACx/view?usp=sharing",
+            ],
+            [
+               "Engineering Intern, Transportation Infrastructure",
+               "Roads and Highways Department (RHD), Barishal",
+               "Mar – May 2026",
+               [
+                  "DCP field testing for subgrade compaction using DCP–CBR correlation",
+                  "Pavement supervision on the Barishal–Bhanga Highway; inspection of Bamrail and Bhurghata bridges",
+               ],
+               D + "1yjN1OMm1i7eF7KKLoazqW64NZLD3eXFu/view?usp=sharing",
+            ],
+            [
+               "Engineering Intern, Materials Testing",
+               "Local Government Engineering Department (LGED), Barishal",
+               "May – Jun 2026",
+               [
+                  "Quality control tests on cement, aggregates, bricks and concrete",
+                  "Local road pavement construction and compaction",
+               ],
+               D + "15YP_YC5I3rLQinodj25yi0I6l3gynrU_/view?usp=sharing",
+            ],
+            [
+               "Engineering Intern, Structural Inspection",
+               "Public Works Department (PWD), Barishal",
+               "Dec 2025 – Jan 2026",
+               [
+                  "Condition assessment of multi-storied government buildings",
+                  "Documentation of drawings, specifications and project records",
+               ],
+               D + "17bljvJs1wuyEzkF0jF2StRaLXciMS3AV/view?usp=sharing",
+            ],
+         ];
+         const RES = [
+            [
+               "Journal Article · Published 2026",
+               "Enhancing the Mechanical Properties of Concrete Using Natural Fiber Reinforcement: A Comparative Study of Bamboo, Banana, and Jute Fibers",
+               "Rabbani et al., including D. Roy. Scientific Journal of Engineering Research, Vol. 2, Issue 3",
+               "https://doi.org/10.64539/sjer.v2i3.2026.458",
+               "DOI",
+            ],
+            [
+               "Conference Paper · Accepted",
+               "A Machine Learning Framework for Road Traffic Accident Severity Prediction in Bangladesh Using Random Forest and XGBoost",
+               "J. Ezma, Elma J., D. Roy. 9th International Conference on Engineering Research, Innovation and Education, SUST, Sylhet",
+               "",
+               "",
+            ],
+            [
+               "B.Sc. Thesis · Defended Aug 2026",
+               "Assessing Land Surface Temperature and Air Temperature Variations Around the Rampal Power Plant, Bangladesh Using Multi-Temporal Landsat-8 and Geospatial Techniques",
+               "Supervisor: Md. Liton Rabbani, Barishal Engineering College",
+               "https://www.researchgate.net/profile/Md-Rabbani-26",
+               "Supervisor profile",
+            ],
+         ];
+         const SK = [
+            [
+               "Hydrology & Water Resources",
+               "HEC-RAS, MIKE 21C, HR Merlin, Flood Hazard Mapping, Hydrological Analysis, River Morphology Modelling",
+            ],
+            [
+               "Field Survey & Data",
+               "Hydrographic Surveying, UAV Surveying, 3D Riverbed Scanning, DCP Field Testing, Hydrological Data Collection",
+            ],
+            [
+               "Photogrammetry & 3D",
+               "Agisoft Metashape, TOPCON Collage Office, Point Cloud Processing, Orthophoto Generation",
+            ],
+            [
+               "GIS, Remote Sensing & CAD",
+               "ArcGIS 10.8, QGIS, Google Earth Pro, AutoCAD, Landsat-8 Processing, Spatial Analysis",
+            ],
+            [
+               "Data & Research",
+               "R, Time-Series and Spatial Analysis, Technical Reporting, LaTeX, Microsoft Office",
+            ],
+            [
+               "Languages",
+               "Bengali (Native), English (Professional Working), Hindi (Conversational)",
+            ],
+         ];
+         const PRJ = [
+            [
+               "YouTube Tutor: Civil Engineering",
+               "Nov 2023 – present",
+               [
+                  "Lecture-style tutorials and worked numerical problems on Structural Analysis & Design, RCC, Hydrology, Environmental and Transportation Engineering",
+                  "Built to make complex concepts approachable for undergraduates and exam candidates",
+               ],
+               "https://www.youtube.com/@dhruborajroy",
+               "Watch channel",
+            ],
+            [
+               "LaTeX Training Workshop",
+               "May 2026",
+               [
+                  "Instructed students on LaTeX for academic writing, research documentation and CV/report preparation",
+                  "Helped participants produce conference-format manuscripts",
+               ],
+               D + "1BX3TIrWW8lLKP6mVdFEBPwfj7HMyo3KI/view?usp=sharing",
+               "Certificate",
+            ],
+            [
+               "Flood Hazard Mapping & Hydrological Analysis",
+               "ArcGIS · HEC-RAS",
+               [
+                  "GIS-based delineation of flood-prone zones and the effect of climate change on flow patterns",
+               ],
+               "",
+               "",
+            ],
+            [
+               "Precipitation Trend & Spatial Analysis",
+               "ArcGIS · R",
+               [
+                  "Long-term rainfall variability and seasonal distribution in coastal Bangladesh, with spatial maps for flood preparedness",
+               ],
+               "",
+               "",
+            ],
+         ];
+         const AW = [
+            [
+               "ICCR Suborna Jayanti Scholarship",
+               "Indian Council for Cultural Relations, Government of India · Jun 2022",
+               "Selected for B.Tech in Civil Engineering at NIT Patna.",
+               D + "1bq3fGCsCbE_C3st_SB0vpWg0DJ_h1JWm/view?usp=sharing",
+               "Offer letter",
+            ],
+            [
+               "University Merit Scholarship",
+               "Barishal Engineering College · 2022 – 2026",
+               "Awarded across all 8 semesters for academic excellence (top 10% of the cohort).",
+               "",
+               "",
+            ],
+         ];
+         const LEAD = [
+            [
+               "Vice President, Research & Innovation Club",
+               "Barishal Engineering College · 2025 – 2026",
+               "Coordinated seminars and workshops that built a research-oriented culture among engineering students.",
+            ],
+            [
+               "Assistant Secretary, Research, Innovation & Publication",
+               "Horizon, Civil Engineers’ Forum · Jan 2024 – Dec 2025",
+               "Coordinated publication efforts and student-led research initiatives.",
+            ],
+         ];
+         const card = (t, m, b, l) =>
+            `<div class="card"><div class="row"><h3>${E(t)}</h3></div><div class="meta">${m}</div>${b}${l ? `<p style="margin:10px 0 0">${l}</p>` : ""}</div>`;
+         const SPEC = [
+            ["Models", "CR-P1 S / CR-P1 M"],
+            ["Maximum range", "S: 100 m · M: 200 m (white, 90% reflectivity)"],
+            ["Dark-grey range", "S: 100 m · M: 150 m (10% reflectivity)"],
+            ["Black range", "50 m (2% reflectivity), both models"],
+            ["Maximum scan speed", "Up to 2 million points/second"],
+            ["3D accuracy", "2 mm @ 10 m; 3.5 mm @ 25 m"],
+            ["Ranging error", "±1 mm"],
+            ["Angular accuracy", "19 arcsec"],
+            ["Field of view", "300° vertical / 360° horizontal"],
+            ["HDR camera", "13 MPx · 2×, 3×, 5× brackets"],
+            [
+               "Storage",
+               "128 GB SATA SSD + 64 GB SD card; supports up to 512 GB",
+            ],
+            ["Typical battery operation", "About 4 hours"],
+            [
+               "Weight / dimensions",
+               "4.4 kg incl. battery · 230 × 183 × 103 mm",
+            ],
+            ["Protection / warranty", "IP54 · 2-year manufacturer warranty"],
+         ];
+         const GAL = [];
+         /* GALLERY: put each photo as a data: URI (or hosted https URL) in src; empty src shows a placeholder */
+        //  const GAL = [
+        //     {
+        //        t: "Setup / leveling",
+        //        c: "Setup, station placement or leveling",
+        //        src: "",
+        //     },
+        //     { t: "Scan", c: "Scan acquisition in the field", src: "" },
+        //     { t: "Site", c: "Survey site and surroundings", src: "" },
+        //     { t: "Detail", c: "Instrument and equipment detail", src: "" },
+        //     { t: "Output", c: "Point cloud and processed output", src: "" },
+        //  ];
+         const app = document.getElementById("app");
+         app.innerHTML = `
+<section id="about"><h2>About</h2><div class="about"><div><p>I’m a civil engineering graduate of Barishal Engineering College (University of Dhaka), finishing first class second in my department. My work sits where water, structures and data meet: from field surveys and laboratory testing with five government agencies to river morphology modelling at the River Research Institute.</p><p>I enjoy turning complex engineering ideas into clear explanations, whether through my YouTube lectures, a LaTeX workshop, or research papers. I’m looking to grow in hydrology, hydraulic modelling, structural analysis and applied machine learning for civil engineering.</p></div>
+<div class="card" style="margin:0"><h3>Focus areas</h3><div class="chips"><span>Hydrology</span><span>River engineering</span><span>Hydraulic modelling</span><span>GIS & remote sensing</span><span>Structural analysis</span><span>Geotechnical testing</span><span>ML for civil engineering</span></div></div></div></section>
+<section id="education"><h2>Education</h2><p class="sub">Academic record.</p>${EDU.map((e) => card(e[0], `<span>${E(e[1])}</span><span class="tag">${e[2]}</span>`, li(e[3]), lk(e[4], "View document"))).join("")}</section>
+<section id="experience"><h2>Experience</h2><p class="sub">Internships across Bangladesh’s water, roads and public works agencies.</p><div class="tl">${EXP.map((e) => card(e[0], `<span>${E(e[1])}</span><span class="tag">${e[2]}</span>`, li(e[3]), lk(e[4], "View letter / certificate"))).join("")}</div>
+<h3 style="margin:26px 0 12px">Leadership</h3><div class="grid">${LEAD.map((e) => card(e[0], E(e[1]), `<p style="margin:0">${E(e[2])}</p>`, "")).join("")}</div></section>
+<section id="research"><h2>Research</h2><p class="sub">Publications, accepted papers and thesis.</p>${RES.map((r) => card(r[1], `<span class="tag">${r[0]}</span>`, `<p style="margin:0;color:var(--mu)">${E(r[2])}</p>`, lk(r[3], r[4]))).join("")}</section>
+<section id="skills"><h2>Skills & tools</h2><p class="sub">Software, field methods and languages.</p><div class="grid">${SK.map(
+            (s) =>
+               card(
+                  s[0],
+                  "",
+                  `<div class="chips">${s[1]
+                     .split(", ")
+                     .map((x) => `<span>${E(x)}</span>`)
+                     .join("")}</div>`,
+                  "",
+               ),
+         ).join("")}</div></section>
+<section id="projects"><h2>Projects & teaching</h2><p class="sub">Teaching, training and analysis work.</p><div class="grid">${PRJ.map((p) => card(p[0], E(p[1]), li(p[2]), lk(p[3], p[4]))).join("")}</div></section>
+<section id="instruments"><h2>Instrument operation skills</h2><p class="sub">Field instruments, equipment operation and supporting field photographs.</p>
+<div class="card"><div class="row"><h3>Topcon CR-P1 laser scanner</h3><span class="tag">Hands-on experience</span></div><div class="meta"><span>River Research Institute, Faridpur</span><span>Oct – Dec 2026</span></div><p style="margin:0">I operated the Topcon CR-P1-S terrestrial laser scanner for 3D riverbed scanning during my research internship, and processed the point cloud datasets in Topcon Collage Office. The CR-P1 is used for accurate 3D data capture in construction, architecture, renovation documentation, progress monitoring and as-built plans.</p><p style="margin:10px 0 0"><a href="https://www.topconpositioning.com/" target="_blank" rel="noopener">Learn more at Topcon Positioning ↗</a></p></div>
+<div class="grid"><div class="card" style="margin:0"><h3>Key performance specifications</h3><table class="spec">${SPEC.map((r) => `<tr><td>${E(r[0])}</td><td>${E(r[1])}</td></tr>`).join("")}</table></div>
+<div style="display:flex;flex-direction:column;gap:14px"><div class="card" style="margin:0"><h3>Features & workflow</h3>${li(["Real-time scan registration and on-site dataset processing with Collage Site", "WLAN scanner control via touchscreen display or wireless connection", "Dual-axis compensator; leveling accuracy 19 arcsec within ±2°", "Retake selected photographs to remove unwanted objects", "Inverse mounting supported"])}</div>
+<div class="card" style="margin:0"><h3>Technical notes</h3>${li(["Operating temperature: +5°C to +40°C; extended operation: −10°C to +55°C (conditions and accessories apply)", "Laser: Class 1; wavelength 1553.5 nm", "Interfaces: WLAN (2.4/5 GHz) and USB 3", "Specifications are a concise selection; consult the manufacturer’s documentation for full conditions."])}</div></div></div>
 
-    <!-- ===================== NAV ===================== -->
-    <header class="main-nav">
-      <div class="container">
-        <div class="wrapper-menu" id="open-full-screen">
-          <div class="line-menu half start"></div>
-          <div class="line-menu"></div>
-          <div class="line-menu half end"></div>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#start" class="RedTextColor" title=""><span>Start</span></a></li>
-            <li><a href="#about" class="GreenTextColor" title=""><span>About</span></a></li>
-            <li><a href="#experience" class="SkyBlueTextColor" title=""><span>Awards</span></a></li>
-            <li><a href="#internship" class="PinkTextColor" title=""><span>Experience</span></a></li>
-            <li><a href="#publications" class="YellowTextColor" title=""><span>Research</span></a></li>
-            <li><a href="#skills" class="PurpleTextColor" title=""><span>Skills</span></a></li>
-            <li><a href="#education" class="PinkTextColor" title=""><span>Education</span></a></li>
-            <li><a href="#projects" class="YellowTextColor" title=""><span>Projects</span></a></li>
-            <li><a href="#contact_us" class="GrayTextColor" title=""><span>Contact</span></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <!-- ===================== ABOUT ME ===================== -->
-    <section id="about">
-      <div class="block">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="about_me_sec">
-                <div class="element_about_left"><img src="images/element_about_left.png" alt="" /></div>
-                <div class="element_about_right"><img src="images/element_about_right.png" alt="" /></div>
-                <div class="heading">
-                  <span class="RedTextColor">Here you will find my resume</span>
-                  <h1>About Me</h1>
-                </div>
-                <p>
-                  👋 Hi, I'm <strong>Dhruboraj Roy</strong> — a Civil Engineering undergraduate at Barishal Engineering College (Faculty of Engineering &amp; Technology, University of Dhaka) with a strong passion for research in hydrology, flood modeling, and sustainable water resource management. I am an ICCR Suborna Jayanti Scholar with a consistent academic record (CGPA 3.40/4.00).
-                </p>
-                <p>
-                  I bring a rare combination of structural and environmental engineering expertise alongside hands-on full-stack programming skills in PHP, JavaScript, MySQL, and R. I have developed 54+ projects including the official <strong>Barishal Engineering College website</strong> and a complete <strong>Learning Management System (LMS)</strong>. I am also a Research Assistant conducting geospatial and remote sensing research using Landsat-8 and ArcGIS/QGIS.
-                </p>
-                <p>
-                  Aspiring to pursue graduate studies (M.Sc./M.Engg./Ph.D.) where I can contribute to impactful research at the intersection of civil engineering and data-driven technology.
-                </p>
-                <p>
-                  📍 Lalmonirhat, Rangpur, Bangladesh &nbsp;|&nbsp;
-                  🌐 <a href="http://thedhrubo.xyz" target="_blank">thedhrubo.xyz</a> &nbsp;|&nbsp;
-                  <a href="https://linkedin.com/in/dhruboraj-roy" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a> &nbsp;|&nbsp;
-                  <a href="https://github.com/dhruborajroy" target="_blank"><i class="fa fa-github"></i> GitHub</a> &nbsp;|&nbsp;
-                  <a href="https://www.youtube.com/@dhruborajroy" target="_blank"><i class="fa fa-youtube"></i> YouTube</a> &nbsp;|&nbsp;
-                  <a href="https://orcid.org/0009-0007-9447-2154" target="_blank">ORCID: 0009-0007-9447-2154</a>
-                </p>
-                <p><strong>Research Interests:</strong> Hydrology &amp; Flood Modeling &nbsp;·&nbsp; Climate Change Impact on Water Resources &nbsp;·&nbsp; Sustainable Water Resource Management &nbsp;·&nbsp; GIS Applications in Civil Engineering &nbsp;·&nbsp; Structural &amp; Earthquake Engineering &nbsp;·&nbsp; Environmental Engineering</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<h3 style="margin:28px 0 4px">Instrument & fieldwork gallery</h3><p class="sub" style="margin-top:0">Swipe, use the arrows or thumbnails, and tap a photo to zoom.</p>
+<div class="stage" id="gs" tabindex="0" aria-label="Gallery"><div id="gimg" style="height:100%"></div><button class="nv pv" aria-label="Previous photo">‹</button><button class="nv nx" aria-label="Next photo">›</button><div class="cnt" id="gc"></div></div>
+<div class="gcap" id="gcap"></div><div class="thumbs" id="gt"></div><div class="dots" id="gd"></div>
+<div class="card" style="margin-top:22px"><h3>My operation notes</h3>${li(["Instrument operation: Topcon CR-P1-S terrestrial laser scanner", "Site / project: River Research Institute (RRI), Faridpur, 3D riverbed scanning", "Tasks performed: 3D riverbed scanning and field survey data collection with Topcon Collage Site", "Software / deliverables: point cloud processing in Topcon Collage Office; UAV orthophotos and photogrammetric models in Agisoft Metashape"])}</div></section>
+<div id="lb"></div>
 
-    <!-- ===================== SCHOLARSHIPS & AWARDS ===================== -->
-    <section id="experience">
-      <div class="block remove_top">
-        <div class="container fluid">
-          <div class="row justify-content-center">
-            <div class="col-xl-9">
-              <div class="heading center">
-                <span class="PurpleTextColor">SCHOLARSHIPS &amp; AWARDS</span>
-              </div>
-              <div class="exp_slider_sec">
-                <div class="element_triangle"><img src="images/element_experience.png" alt="" /></div>
-                <ul class="exp_slider">
-
-                  <li>
-                    <div class="experience">
-                      <div class="exp_tip">
-                        <h4>ICCR Suborna Jayanti Scholarship (SJS)</h4>
-                        <span>Selected as international student to pursue B.Tech in Civil Engineering at <strong>National Institute of Technology (NIT), Patna</strong>, India — Indian Council for Cultural Relations (ICCR), Government of India.</span>
-                      </div>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot RedLight"><i class="RedDark"></i></div>
-                        </div>
-                      </div>
-                      <span class="RedTextColor">Jun 2022</span>
-                      <div class="exp_logo">
-                        <img src="images/resource/nit_patna.png" alt="NIT Patna" style="width:25%;" />
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="experience flip">
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo2.png" alt="" />
-                      </div>
-                      <span class="PurpleTextColor">Mar 2024</span>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot PurpleLight"><i class="PurpleDark"></i></div>
-                        </div>
-                      </div>
-                      <div class="exp_tip">
-                        <h4>2nd Place — Project Showcasing 2024</h4>
-                        <span>Presented an innovative civil engineering project at the Technical Competition, Research &amp; Training Center, Barishal Engineering College (University of Dhaka). Demonstrated strong analytical and technical presentation skills.</span>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="experience">
-                      <div class="exp_tip">
-                        <h4>1st Place (Zila Level) — Science Fair 2017</h4>
-                        <span>Developed mobile app <strong>"Krishan Bondhu"</strong> for agricultural assistance and won 1st place at Lalmonirhat District Science Fair. Selected for <strong>Children Science Congress 2017</strong> (December 2017).</span>
-                      </div>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot PinkLight"><i class="PinkDark"></i></div>
-                        </div>
-                      </div>
-                      <span class="PinkTextColor">Jun 2017</span>
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo3.png" alt="" />
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="experience flip">
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo2.png" alt="" />
-                      </div>
-                      <span class="GreenTextColor">Feb 2024</span>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot GreenLight"><i class="GreenDark"></i></div>
-                        </div>
-                      </div>
-                      <div class="exp_tip">
-                        <h4>AutoCAD Training Course (3 Days)</h4>
-                        <span>Completed intensive AutoCAD training at Barishal Engineering College. Gained hands-on experience in 2D drafting, engineering drawing, and design techniques for civil engineering applications.</span>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="experience">
-                      <div class="exp_tip">
-                        <h4>Board Scholarship — JSC</h4>
-                        <span>Awarded board-level scholarship by Dinajpur Education Board for outstanding performance in the Junior School Certificate (JSC) examination.</span>
-                      </div>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot SkyBlueLight"><i class="SkyBlueDark"></i></div>
-                        </div>
-                      </div>
-                      <span class="SkyBlueTextColor">Dec 2015</span>
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo1.png" alt="" />
-                      </div>
-                    </div>
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== EXPERIENCE & INTERNSHIP ===================== -->
-    <section id="internship">
-      <div class="block bg_light">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="heading center">
-                <span class="PinkTextColor">PROFESSIONAL EXPERIENCE</span>
-                <h1>Experience &amp; <i>Internship</i></h1>
-              </div>
-              <div class="exp_slider_sec">
-                <div class="element_triangle"><img src="images/element_experience.png" alt="" /></div>
-                <ul class="exp_slider">
-
-                  <li>
-                    <div class="experience">
-                      <div class="exp_tip">
-                        <h4>Research Assistant — Barishal Engineering College</h4>
-                        <span>
-                          <strong>Part-time, On-site | Aug 2025 – Present</strong><br/>
-                          Conducting independent research in environmental &amp; geospatial analysis for SW Bangladesh using remote sensing and GIS.<br/>
-                          🔹 <em>Thermal Footprint Study:</em> Analyzed Rampal Power Plant thermal impact via multi-temporal Landsat-8; assessed LST, air temperature, and spatial thermal anomaly patterns.<br/>
-                          🔹 <em>Precipitation Trend Analysis:</em> GIS-based long-term rainfall variability and spatial distribution analysis to support water resource planning.<br/>
-                          <em>Tools: Landsat-8, ArcGIS/QGIS, time-series analysis, data visualization.</em>
-                        </span>
-                      </div>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot RedLight"><i class="RedDark"></i></div>
-                        </div>
-                      </div>
-                      <span class="RedTextColor">2025 – Present</span>
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo2.png" alt="" />
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="experience flip">
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo2.png" alt="" />
-                      </div>
-                      <span class="SkyBlueTextColor">Dec 2025 – Jan 2026</span>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot SkyBlueLight"><i class="SkyBlueDark"></i></div>
-                        </div>
-                      </div>
-                      <div class="exp_tip">
-                        <h4>Intern — Civil Engineering, Public Works Department (PWD)</h4>
-                        <span>
-                          <strong>Government of Bangladesh | Internship, On-site | Barishal</strong><br/>
-                          Completed a 15-day internship at PWD Barishal. Gained practical exposure to government civil engineering projects, site supervision, and construction management practices.
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="experience">
-                      <div class="exp_tip">
-                        <h4>Assistant Secretary — Research, Innovation &amp; Publication Sub-Committee</h4>
-                        <span>
-                          <strong>Horizon – Civil Engineers Forum, BEC | Jan 2024 – Jan 2025</strong><br/>
-                          Drove research-oriented culture through organized academic events and collaborative projects. Coordinated academic publication efforts and organized seminars and innovation showcases.<br/>
-                          <em>Skills: Leadership · Research Coordination · Event Management · Team Collaboration</em>
-                        </span>
-                      </div>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot PurpleLight"><i class="PurpleDark"></i></div>
-                        </div>
-                      </div>
-                      <span class="PurpleTextColor">2024 – 2025</span>
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo2.png" alt="" />
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="experience flip">
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo2.png" alt="" />
-                      </div>
-                      <span class="GreenTextColor">May – Jun 2024</span>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot GreenLight"><i class="GreenDark"></i></div>
-                        </div>
-                      </div>
-                      <div class="exp_tip">
-                        <h4>Graphic Design Training — Photoshop &amp; AI Tools</h4>
-                        <span>
-                          <strong>ICT Division, Government of Bangladesh (EDGE Project) | Part-time</strong><br/>
-                          Completed professional training on Graphic Design using Photoshop and AI tools. Developed skills in digital content creation, visual design, and AI-assisted creative workflows.
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="experience">
-                      <div class="exp_tip">
-                        <h4>Senior Tech Assistant — Lalmonirhat Science &amp; Literature Club</h4>
-                        <span>
-                          <strong>Lalmonirhat, Bangladesh | 2020 – 2024</strong><br/>
-                          Provided technical guidance and mentorship to junior members in science and technology projects. Supported the club's STEM outreach initiatives in Lalmonirhat district.
-                        </span>
-                      </div>
-                      <div class="row">
-                        <div class="col-xl-12">
-                          <div class="dot PinkLight"><i class="PinkDark"></i></div>
-                        </div>
-                      </div>
-                      <span class="PinkTextColor">2020 – 2024</span>
-                      <div class="exp_logo">
-                        <img src="images/resource/exp_logo3.png" alt="" />
-                      </div>
-                    </div>
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== PUBLICATIONS & RESEARCH ===================== -->
-    <section id="publications">
-      <div class="block">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="about_me_sec">
-                <div class="element_about_left"><img src="images/element_about_left.png" alt="" /></div>
-                <div class="element_about_right"><img src="images/element_about_right.png" alt="" /></div>
-                <div class="heading">
-                  <span class="YellowTextColor">Academic Work</span>
-                  <h1>Publications &amp; <i>Research</i></h1>
-                </div>
-
-                <div style="margin-bottom: 28px;">
-                  <h4 style="margin-bottom:6px;">📄 B.Sc. Engineering Thesis <span style="font-weight:400;font-size:14px;">(2024 – 2025)</span></h4>
-                  <p style="margin-bottom:4px;">
-                    <strong>Title:</strong> <em>Thermal Footprint of Industrial Development: Assessing Land Surface Temperature and Air Temperature Variations Around the Rampal Power Plant, Bangladesh Using Multi-Temporal Landsat-8 and Geospatial Techniques</em>
-                  </p>
-                  <p style="margin-bottom:4px;">
-                    <strong>Authors:</strong> Dhruboraj Roy, Orin Karmaker, Md. Liton Rabbani — Dept. of Civil Engineering, Barishal Engineering College, University of Dhaka.
-                  </p>
-                  <p style="margin-bottom:4px;">
-                    <strong>ORCID:</strong> <a href="https://orcid.org/0009-0007-9447-2154" target="_blank">0009-0007-9447-2154</a> &nbsp;|&nbsp;
-                    <strong>Email:</strong> <a href="mailto:Dhruborajroy.duengg@bec.edu.bd">Dhruborajroy.duengg@bec.edu.bd</a>
-                  </p>
-                  <p style="margin-bottom:4px;">
-                    Conducted a comprehensive spatio-temporal analysis of LST, LULC, NDVI, Air Temperature, and UHI intensity around the 1,320 MW Rampal Maitree Super Thermal Power Project, Bagerhat, using Landsat-8 imagery at biennial intervals (2014–2024).
-                  </p>
-                  <p style="margin-bottom:4px;">
-                    <strong>Key Findings:</strong> Max LST rose 10°C (24.30→34.30°C); Bare/Industrial land tripled (9.2%→27.1%); Mean NDVI declined 44% (0.41→0.23); Peak air temperature 40.4°C in 2022; UHI intensity nearly doubled (4.5°C→7.8°C).
-                  </p>
-                  <p>
-                    <strong>Methods:</strong> ArcGIS 10.8, ISODATA LULC Classification, Radiative Transfer Equation (LST), AL-Anbari et al. (2019) Air Temperature Regression, Getis-Ord Gi* Hotspot Analysis, Pearson Correlation. Overall Accuracy &gt;80%, Kappa &gt;0.75.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 style="margin-bottom:6px;">📝 Journal Manuscript <span style="font-weight:400;font-size:14px;">(Under Preparation, 2025)</span></h4>
-                  <p style="margin-bottom:4px;">
-                    <strong>Working Title:</strong> <em>Spatio-Temporal Analysis of Land Surface Temperature and Air Temperature Dynamics Induced by the Rampal Thermal Power Plant Using Landsat-8 Imagery and GIS: Implications for the Sundarbans Ecosystem</em>
-                  </p>
-                  <p style="margin-bottom:4px;">
-                    <strong>Authors:</strong> Dhruboraj Roy, Orin Karmaker, Md. Liton Rabbani — Dept. of Civil Engineering, Barishal Engineering College, University of Dhaka.
-                  </p>
-                  <p>
-                    <strong>Target Journals:</strong> Remote Sensing of Environment &nbsp;|&nbsp; Environmental Science &amp; Pollution Research &nbsp;|&nbsp; Sustainable Cities and Society (Q1/Q2 indexed).
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== SKILLS ===================== -->
-    <section id="skills">
-      <div class="block remove_top">
-        <div class="element_city"><img src="images/element_city.jpg" alt="" /></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="heading">
-                <span class="SkyBlueTextColor">Engineering &amp; Technology</span>
-                <h1>Skills &amp; <i>Abilities</i></h1>
-              </div>
-              <div class="skill_sec">
-
-                <div class="progress_sec">
-                  <h3>AutoCAD</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar RedBgShadow" style="width: 82%;">
-                      <span class="RedTextColor">82<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="progress_sec">
-                  <h3>ArcGIS / QGIS (Remote Sensing &amp; GIS)</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar PurpleBgShadow" style="width: 80%;">
-                      <span class="PurpleTextColor">80<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="progress_sec">
-                  <h3>ETABS (Structural Analysis)</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar GreenBgShadow" style="width: 70%;">
-                      <span class="GreenTextColor">70<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="progress_sec">
-                  <h3>PHP (Back-End Development)</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar RedBgShadow" style="width: 78%;">
-                      <span class="RedTextColor">78<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="progress_sec">
-                  <h3>MySQL (Database)</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar PurpleBgShadow" style="width: 75%;">
-                      <span class="PurpleTextColor">75<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="progress_sec">
-                  <h3>JavaScript / jQuery</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar GreenBgShadow" style="width: 65%;">
-                      <span class="GreenTextColor">65<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="progress_sec">
-                  <h3>HTML &amp; CSS</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar RedBgShadow" style="width: 72%;">
-                      <span class="RedTextColor">72<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="progress_sec">
-                  <h3>R (Statistical &amp; Spatial Analysis)</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar PurpleBgShadow" style="width: 58%;">
-                      <span class="PurpleTextColor">58<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="progress_sec">
-                  <h3>Adobe Photoshop &amp; AI Design Tools</h3>
-                  <div class="skill_shape">
-                    <div class="skill_bar GreenBgShadow" style="width: 62%;">
-                      <span class="GreenTextColor">62<i>%</i></span>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== HOBBIES ===================== -->
-    <section id="hobbies">
-      <div class="block bg_light">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="heading center">
-                <span class="YellowTextColor">What I Love</span>
-                <h1>Hobbies &amp; <i>Interests</i></h1>
-              </div>
-              <div class="hobbies_sec">
-                <div class="hobbies">
-                  <div class="element_hobbies"><img src="images/element_hobbies1.png" alt="" /></div>
-                  <div class="hobbies_icon_box"><img src="images/resource/hobbies_icon1.png" alt=""></div>
-                  <h4></h4>
-                  <span>Traveling</span>
-                </div>
-                <div class="hobbies">
-                  <div class="element_hobbies"><img src="images/element_hobbies2.png" alt="" /></div>
-                  <div class="hobbies_icon_box"><img src="images/resource/hobbies_icon2.png" alt=""></div>
-                  <h4></h4>
-                  <span>Coding</span>
-                </div>
-                <div class="hobbies">
-                  <div class="element_hobbies"><img src="images/element_hobbies3.png" alt="" /></div>
-                  <div class="hobbies_icon_box"><img src="images/resource/hobbies_icon3.png" alt=""></div>
-                  <h4></h4>
-                  <span>Music</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== EDUCATION ===================== -->
-    <section id="education">
-      <div class="block">
-        <div class="element_moutains_left"><img src="images/element_city.jpg" alt="" /></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="heading">
-                <span class="PinkTextColor">Academic Background</span>
-                <h1>My <i>Education</i></h1>
-                <div class="heading_paragraph">
-                  <div class="row">
-                    <div class="col-xl-8">
-                      <p>A journey of consistent academic excellence — GPA 5.00 in both SSC &amp; HSC, and currently pursuing B.Sc. Engineering in Civil Engineering at Barishal Engineering College, affiliated with the University of Dhaka.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="education_sec">
-                <div class="row align-items-center">
-
-                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <div class="education_box PinkDarkBorder">
-                      <i class="fa fa-graduation-cap PinkTextColor"></i>
-                      <h3>Lalmonirhat Govt. High School</h3>
-                      <span>SSC — Science<br/>GPA: 5.00 / 5.00<br/>2016 – 2018</span>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <div class="education_box YellowDarkBorder">
-                      <i class="fa fa-graduation-cap YellowTextColor"></i>
-                      <h3>Police Lines School &amp; College, Rangpur</h3>
-                      <span>HSC — Science<br/>GPA: 5.00 / 5.00<br/>2018 – 2020</span>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
-                    <div class="education_box GreenDarkBorder">
-                      <i class="fa fa-graduation-cap GreenTextColor"></i>
-                      <h3>Barishal Engineering College (Univ. of Dhaka)</h3>
-                      <span>B.Sc. (Engg.) in Civil Engineering<br/>CGPA: 3.40 / 4.00<br/>2022 – Present</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== PROJECTS ===================== -->
-    <section id="projects">
-      <div class="block remove_top">
-        <div class="element_moutains_right"><img src="images/element_mountains_flip.jpg" alt="" /></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="heading center">
-                <h1><strong><i>54+</i></strong> repositories — clients &amp; institutions use my projects</h1>
-              </div>
-              <section id="options">
-                <div class="option-isotop">
-                  <ul id="filter" class="option-set portfolio-nav" data-option-key="filter">
-                    <li><a href="#all" data-option-value="*" class="selected"><span>All</span></a></li>
-                    <li><a href="#educational" data-option-value=".cat1"><span>Educational / Institutional</span></a></li>
-                    <li><a href="#e-commerce" data-option-value=".cat2"><span>E-commerce / Web Apps</span></a></li>
-                    <li><a href="#research" data-option-value=".cat3"><span>Research / GIS</span></a></li>
-                  </ul>
-                </div>
-              </section>
-              <div class="grids-sec">
-                <div class="row" id="masonry">
-
-                  <!-- BEC Website & LMS -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat1">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/bec.png" alt="BEC Website" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="https://bec.edu.bd" target="_blank" title="">BEC Official Website &amp; LMS</a></h3>
-                        <span>PHP · JavaScript · MySQL | Feb 2025 – Present<br/>Official website + full Learning Management System (Faculty/Student/Admin portals) for Barishal Engineering College.</span>
-                        <div class="project_btns">
-                          <a href="https://bec.edu.bd" title="" class="link_btn PurpleBgShadow" target="_blank"><i class="fa fa-unlink"></i></a>
-                          <div class="pop_link">
-                            <a href="images/resource/bec.png" title="" class="popup_btn"><i class="fa fa-search"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- BEC Hall Management -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat1">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/bec.png" alt="BEC Hall Management" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="https://github.com/dhruborajroy/bec-hall-management-system" target="_blank" title="">BEC Hall Management System</a></h3>
-                        <span>PHP | Nov 2025<br/>Residential hall management system for BEC with student allocation, record management, and admin modules.</span>
-                        <div class="project_btns">
-                          <a href="https://github.com/dhruborajroy/bec-hall-management-system" title="" class="link_btn PurpleBgShadow" target="_blank"><i class="fa fa-github"></i></a>
-                          <div class="pop_link">
-                            <a href="images/resource/bec.png" title="" class="popup_btn"><i class="fa fa-search"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Horizon Certificate Generator -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat1">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/bec.png" alt="Horizon Certificate Generator" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="https://github.com/dhruborajroy/horizon" target="_blank" title="">Horizon Certificate Generator</a></h3>
-                        <span>PHP | Nov 2025<br/>Automated bulk multiline certificate generator for Horizon – Civil Engineers Forum. One-click generation and printing.</span>
-                        <div class="project_btns">
-                          <a href="https://github.com/dhruborajroy/horizon" title="" class="link_btn GreenBgShadow" target="_blank"><i class="fa fa-github"></i></a>
-                          <div class="pop_link">
-                            <a href="images/resource/bec.png" title="" class="popup_btn"><i class="fa fa-search"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Courier Fraud Check -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat2">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/MASHALLAH-WEBFINAL-3.svg" alt="Courier Fraud Check" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="https://github.com/dhruborajroy/Courier-Farud-Check" target="_blank" title="">Courier Fraud Check System</a></h3>
-                        <span>PHP · JSON API | Jul 2025<br/>Smart courier fraud detection tool with responsive UI for real-time fraud tracking and verification.</span>
-                        <div class="project_btns">
-                          <a href="https://github.com/dhruborajroy/Courier-Farud-Check" title="" class="link_btn GreenBgShadow" target="_blank"><i class="fa fa-github"></i></a>
-                          <div class="pop_link">
-                            <a href="images/resource/MASHALLAH-WEBFINAL-3.svg" title="" class="popup_btn"><i class="fa fa-search"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ScanBite QR System -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat2">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/MASHALLAH-WEBFINAL-3.svg" alt="ScanBite QR System" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="https://github.com/dhruborajroy/ScanBite" target="_blank" title="">ScanBite — QR Management System</a></h3>
-                        <span>PHP · JavaScript · MySQL | 2023 – 2024<br/>Full-stack QR-based data entry, authentication, and record management system with live deployment.</span>
-                        <div class="project_btns">
-                          <a href="https://github.com/dhruborajroy/ScanBite" title="" class="link_btn GreenBgShadow" target="_blank"><i class="fa fa-github"></i></a>
-                          <div class="pop_link">
-                            <a href="images/resource/MASHALLAH-WEBFINAL-3.svg" title="" class="popup_btn"><i class="fa fa-search"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Mashallah Shop -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat2">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/MASHALLAH-WEBFINAL-3.svg" alt="Mashallah Shop" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="http://Mashallah.shop/" title="" target="_blank">Mashallah Shop</a></h3>
-                        <span>E-Commerce Website — live online store with full product and order management.</span>
-                        <div class="project_btns">
-                          <a href="http://Mashallah.shop/" title="" class="link_btn GreenBgShadow" target="_blank"><i class="fa fa-unlink"></i></a>
-                          <div class="pop_link">
-                            <a href="images/resource/MASHALLAH-WEBFINAL-3.svg" title="" class="popup_btn"><i class="fa fa-search"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Flood Hazard Mapping -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat3">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/bec.png" alt="Flood Hazard Mapping" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="#" title="">Flood Hazard Mapping &amp; Hydrological Analysis</a></h3>
-                        <span>ArcGIS · QGIS | 2024<br/>GIS-based spatial analysis to delineate flood-prone zones and quantify climate change impact on water flow for SW Bangladesh.</span>
-                        <div class="project_btns">
-                          <div class="pop_link">
-                            <a href="images/resource/bec.png" title="" class="popup_btn"><i class="fa fa-search"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Rampal Thermal Footprint Research -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat3">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/bec.png" alt="Rampal Research" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="#publications" title="">Rampal Power Plant Thermal Footprint Study</a></h3>
-                        <span>Landsat-8 · ArcGIS · GIS | 2024 – 2025<br/>B.Sc. thesis research: spatio-temporal LST, LULC, NDVI, Air Temperature &amp; UHI analysis around Rampal Power Plant using multi-temporal Landsat-8 imagery (2014–2024).</span>
-                        <div class="project_btns">
-                          <a href="#publications" title="" class="link_btn PurpleBgShadow"><i class="fa fa-book"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Krishan Bondhu -->
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 cat2">
-                    <div class="project_box">
-                      <div class="project_img">
-                        <img src="images/resource/bec.png" alt="Krishan Bondhu" />
-                      </div>
-                      <div class="project_details">
-                        <h3><a href="#" title="">Krishan Bondhu — Agricultural App</a></h3>
-                        <span>Mobile App Development | 2017<br/>Mobile app to assist farmers with crop management. Won 1st place at Lalmonirhat District Science Fair &amp; represented at National Children Science Congress.</span>
-                        <div class="project_btns">
-                          <div class="pop_link">
-                            <a href="images/resource/bec.png" title="" class="popup_btn"><i class="fa fa-search"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <p style="text-align:center; margin-top:20px;">
-                <a href="https://github.com/dhruborajroy?tab=repositories" target="_blank" class="theme_btn md_btr GrayBgShadow">
-                  <i class="fa fa-github"></i> View All 54+ Repositories on GitHub
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== CONTACT ===================== -->
-    <section id="contact_us">
-      <div class="block bg_light">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="heading with_btn">
-                <h1>Have a <i>Question?</i></h1>
-                <button id="OpenMap" class="PinkBgShadow"><i class="fa fa-map-marker"></i> WHERE I AM LOCATED</button>
-              </div>
-              <div class="contact_sec">
-                <div class="row">
-                  <div class="col-xl-12">
-
-                    <div class="contact_box">
-                      <div class="contact_img">
-                        <div class="contact_element"><img src="images/element_contact1.png" alt="" /></div>
-                        <img src="images/resource/contact_icon1.png" alt="">
-                      </div>
-                      <div class="contact_info">
-                        <span>Barishal Engineering College Hall,</span>
-                        <span>Barishal, Bangladesh</span>
-                      </div>
-                    </div>
-
-                    <div class="contact_box">
-                      <div class="contact_img">
-                        <div class="contact_element"><img src="images/element_contact2.png" alt="" /></div>
-                        <img src="images/resource/contact_icon2.png" alt="">
-                      </div>
-                      <div class="contact_info">
-                        <span>+880 01705-927257</span>
-                      </div>
-                    </div>
-
-                    <div class="contact_box">
-                      <div class="contact_img">
-                        <div class="contact_element"><img src="images/element_contact3.png" alt="" /></div>
-                        <img src="images/resource/contact_icon3.png" alt="">
-                      </div>
-                      <div class="contact_info">
-                        <span>Dhruborajroy3@gmail.com</span>
-                        <span>Dhrubo.bec.ce04@gmail.com</span>
-                        <span>Dhruborajroy.duengg@bec.edu.bd</span>
-                        <span>developer@bec.edu.bd</span>
-                      </div>
-                    </div>
-
-                    <div class="m_on_social">
-                      <h3>Find Me On Social</h3>
-                      <a href="http://fb.com/dhruboraj.roy" title="Facebook" class="fb_color" target="_blank"><i class="fa fa-facebook"></i></a>
-                      <a href="https://www.instagram.com/dhruboraj.roy/" title="Instagram" class="twitter_color" target="_blank"><i class="fa fa-instagram"></i></a>
-                      <a href="https://linkedin.com/in/dhruboraj-roy" title="LinkedIn" class="google_color" target="_blank"><i class="fa fa-linkedin"></i></a>
-                      <a href="https://github.com/dhruborajroy" title="GitHub" class="fb_color" target="_blank"><i class="fa fa-github"></i></a>
-                      <a href="https://www.youtube.com/@dhruborajroy" title="YouTube" class="google_color" target="_blank"><i class="fa fa-youtube"></i></a>
-                      <a href="http://t.me/dhruboraj.roy" title="Telegram" class="twitter_color" target="_blank"><i class="fa fa-telegram"></i></a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== FOOTER ===================== -->
-    <footer>
-      <div class="block no_padding">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="bottom_line">
-                <div class="row">
-                  <div class="col-xl-7">
-                    <div class="download_cv_bottom">
-                      <span>Would you like to get my CV as PDF?</span>
-                      <a href="https://bec.edu.bd/developer/DhruboRajRoy-CV.pdf" class="theme_btn md_btr GrayBgShadow" title="" target="_blank">
-                        <i class="fa fa-long-arrow-down"></i> Download CV
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xl-5">
-                    <p>Copyright &copy; <a href="http://thedhrubo.xyz" target="_blank">TheDhrubo.xyz</a> 2018–<span id="year"></span>.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/isotop.js"></script>
-    <script src="js/poptrox.js"></script>
-    <script src="js/jquery.jigowatt.js"></script>
-    <script src="js/enllax.js"></script>
-    <script src="js/jquery.scroller.js"></script>
-    <script src="js/jQuery_nav.js"></script>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+<section id="awards"><h2>Scholarships & awards</h2><p class="sub">&nbsp;</p><div class="grid">${AW.map((a) => card(a[0], E(a[1]), `<p style="margin:0">${E(a[2])}</p>`, lk(a[3], a[4]))).join("")}</div></section>
+<section id="contact"><h2>Contact</h2><p class="sub">Open to research collaborations, teaching and graduate opportunities.</p><div class="card"><p style="margin:0">Based in Barishal, Bangladesh. The best way to reach me is by email.</p><div class="contact"><a class="b p" href="mailto:Dhruboraj.duengg@bec.edu.bd">Dhruboraj.duengg@bec.edu.bd</a><a class="b" style="color:var(--ac);border-color:var(--bd)" href="https://thedhrubo.xyz" target="_blank" rel="noopener">thedhrubo.xyz</a><a class="b" style="color:var(--ac);border-color:var(--bd)" href="https://linkedin.com/in/dhruboraj-roy" target="_blank" rel="noopener">LinkedIn</a><a class="b" style="color:var(--ac);border-color:var(--bd)" href="https://github.com/dhruborajroy" target="_blank" rel="noopener">GitHub</a><a class="b" style="color:var(--ac);border-color:var(--bd)" href="https://orcid.org/0009-0007-9447-2154" target="_blank" rel="noopener">ORCID</a></div></div></section>`;
+         document.getElementById("yr").textContent = new Date().getFullYear();
+         const nav = document.getElementById("nav"),
+            mb = document.getElementById("mb"),
+            cur = document.getElementById("cur"),
+            links = [...document.querySelectorAll("#menu a")],
+            secs = links.map((a) =>
+               document.querySelector(a.getAttribute("href")),
+            );
+         const setOpen = (o) => {
+            nav.classList.toggle("open", o);
+            mb.setAttribute("aria-expanded", o);
+            mb.setAttribute("aria-label", o ? "Close menu" : "Open menu");
+         };
+         mb.onclick = (e) => {
+            e.stopPropagation();
+            setOpen(!nav.classList.contains("open"));
+         };
+         links.forEach((a) =>
+            a.addEventListener("click", () => setOpen(false)),
+         );
+         document.addEventListener("click", (e) => {
+            if (!nav.contains(e.target)) setOpen(false);
+         });
+         document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") setOpen(false);
+         });
+         addEventListener("resize", () => {
+            if (innerWidth > 860) setOpen(false);
+         });
+         function spy() {
+            let k = -1;
+            secs.forEach((s, i) => {
+               if (s && s.getBoundingClientRect().top <= innerHeight * 0.3)
+                  k = i;
+            });
+            if (
+               innerHeight + scrollY >=
+               document.documentElement.scrollHeight - 4
+            )
+               k = secs.length - 1;
+            links.forEach((a, i) => {
+               a.classList.toggle("on", i === k);
+               i === k
+                  ? a.setAttribute("aria-current", "true")
+                  : a.removeAttribute("aria-current");
+            });
+            cur.textContent = k < 0 ? "Home" : links[k].textContent;
+         }
+         let tk = 0;
+         addEventListener(
+            "scroll",
+            () => {
+               if (!tk) {
+                  tk = 1;
+                  requestAnimationFrame(() => {
+                     tk = 0;
+                     spy();
+                  });
+               }
+            },
+            { passive: true },
+         );
+         addEventListener("resize", spy);
+         spy();
+         let gi = 0;
+         const gs = document.getElementById("gs"),
+            lb = document.getElementById("lb");
+         const slide = (g, i) =>
+            g.src
+               ? `<img src="${g.src}" alt="${E(g.t)}">`
+               : `<div class="ph2"><b>0${i + 1}</b><span>${E(g.t)}: photo coming soon</span></div>`;
+         function gshow(n) {
+            gi = (n + GAL.length) % GAL.length;
+            const g = GAL[gi];
+            document.getElementById("gimg").innerHTML = slide(g, gi);
+            document.getElementById("gc").textContent =
+               `0${gi + 1} / 0${GAL.length}`;
+            document.getElementById("gcap").innerHTML =
+               `${E(g.t)}<small>${E(g.c)}</small>`;
+            document.getElementById("gt").innerHTML = GAL.map(
+               (x, i) =>
+                  `<button class="${i === gi ? "on" : ""}" data-i="${i}" aria-label="${E(x.t)}">${x.src ? `<img src="${x.src}" alt="">` : `0${i + 1} · ${E(x.t)}`}</button>`,
+            ).join("");
+            document.getElementById("gd").innerHTML = GAL.map(
+               (x, i) => `<i class="${i === gi ? "on" : ""}"></i>`,
+            ).join("");
+         }
+         gshow(0);
+         gs.querySelector(".pv").onclick = (e) => {
+            e.stopPropagation();
+            gshow(gi - 1);
+         };
+         gs.querySelector(".nx").onclick = (e) => {
+            e.stopPropagation();
+            gshow(gi + 1);
+         };
+         document.getElementById("gt").onclick = (e) => {
+            const b = e.target.closest("button");
+            if (b) gshow(+b.dataset.i);
+         };
+         gs.onclick = () => {
+            lb.innerHTML = slide(GAL[gi], gi);
+            lb.classList.add("on");
+         };
+         lb.onclick = () => lb.classList.remove("on");
+         gs.onkeydown = (e) => {
+            if (e.key === "ArrowLeft") gshow(gi - 1);
+            if (e.key === "ArrowRight") gshow(gi + 1);
+         };
+         document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") lb.classList.remove("on");
+         });
+         let tx = 0;
+         gs.addEventListener(
+            "touchstart",
+            (e) => {
+               tx = e.touches[0].clientX;
+            },
+            { passive: true },
+         );
+         gs.addEventListener("touchend", (e) => {
+            const d = e.changedTouches[0].clientX - tx;
+            if (Math.abs(d) > 40) gshow(gi + (d < 0 ? 1 : -1));
+         });
+      </script>
+   </body>
 </html>
